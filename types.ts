@@ -87,6 +87,12 @@ export type DbConfig = {
   vectorModel: string;
 };
 
+export type Endpoint = {
+  path: string;
+  method: "GET" | "POST" | "PATCH" | "DELETE";
+};
+
+
 export type ServerConfig = {
   cookieOptions: {
     httpOnly: boolean;
