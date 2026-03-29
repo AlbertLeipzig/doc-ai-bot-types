@@ -101,7 +101,7 @@ export type Endpoint = {
 
 export type Method = "GET" | "POST" | "PATCH" | "DELETE";
 
-export type Request = Endpoint & {
+export type RequestData = Endpoint & {
   body?: unknown;
 };
 
