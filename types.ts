@@ -84,7 +84,6 @@ export type AskBody = {
   topK?: number;
 };
 
-
 export type Cors = {
   methods: string;
   origin: string;
@@ -97,7 +96,13 @@ export type DbConfig = {
 
 export type Endpoint = {
   path: string;
-  method: "GET" | "POST" | "PATCH" | "DELETE";
+  method: Method;
+};
+
+export type Method = "GET" | "POST" | "PATCH" | "DELETE";
+
+export type Request = Endpoint & {
+  body?: unknown;
 };
 
 export type ServerConfig = {
