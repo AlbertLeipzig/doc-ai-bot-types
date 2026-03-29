@@ -92,7 +92,6 @@ export type Endpoint = {
   method: "GET" | "POST" | "PATCH" | "DELETE";
 };
 
-
 export type ServerConfig = {
   cookieOptions: {
     httpOnly: boolean;
@@ -216,6 +215,12 @@ export type GenerationOptions = Partial<GenerateConfig>;
 export type LoadedDoc = {
   content: string;
   metadata?: Record<string, unknown>;
+};
+
+export type VectorUpdateData = {
+  metadata?: unknown;
+  content?: string;
+  embedding?: unknown;
 };
 
 /* CLIENT Internal Logic */
