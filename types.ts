@@ -77,6 +77,14 @@ export type ApiConfig = {
   server: ServerConfig;
 };
 
+export type AskBody = {
+  question: string;
+  vectorProfileId: string;
+  conversationId?: string;
+  topK?: number;
+};
+
+
 export type Cors = {
   methods: string;
   origin: string;
