@@ -378,8 +378,9 @@ export type RawError = {
 };
 
 export type ApiResponse = {
-  code: 200 | 201 | 404 | 500;
-  message?: string;
+  codeNumber: 200 | 201 | 400 | 401 | 404 | 500;
+  systemMessage?: string;
+  userMessage?: string;
 };
 
 export type ClientFormattedError = {
