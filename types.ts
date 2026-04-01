@@ -378,7 +378,7 @@ export type RawError = {
 };
 
 export type ApiResponse = {
-  codeNumber: 200 | 201 | 400 | 401 | 404 | 500;
+  codeNumber: 200 | 201 | 400 | 401 | 404 | 422 | 500;
   systemMessage?: string;
   userMessage?: string;
 };
