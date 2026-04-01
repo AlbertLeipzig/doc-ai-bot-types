@@ -2,6 +2,7 @@
   "name": "doc-ai-bot-types",
   "version": "1.0.0",
   "main": "index.js",
+  "types": "./types.ts",
   "scripts": {
     "branch:init": "git push --set-upstream origin $(git branch --show-current)",
     "branch:main": "git switch main && git pull",
