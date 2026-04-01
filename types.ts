@@ -84,6 +84,7 @@ export type AskBody = {
   topK?: number;
 };
 
+
 export type Cors = {
   methods: string;
   origin: string;
@@ -186,11 +187,11 @@ export type ChunkingConfig = {
 export type ConstellationConfig = {
   docsConfig: DocsConfig;
   chunking: ChunkingConfig;
+  export type IngestionResult = {
   model: string;
   collectionName: string;
 };
 
-export type IngestionResult = {
   totalChunks: number;
   errors: string[];
 };

@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "branch:init": "git push --set-upstream origin $(git branch --show-current)",
+    "branch:main": "git switch main && git pull",
+    "branch:new": "git checkout -b",
+    "branch:sanity": "git add . && git commit -m 'wip' && git push"
   },
   "keywords": [],
   "author": "",
