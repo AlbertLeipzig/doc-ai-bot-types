@@ -48,6 +48,12 @@ export type MessageData = {
 
 /* API INTERNAL LOGIC */
 
+export type CustomResponse = {
+  res: Response;
+  messageCode?: string;
+  data?: unknown;
+};
+
 export type ApiConfig = {
   db: {
     uri: string;
