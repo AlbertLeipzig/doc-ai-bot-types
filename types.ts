@@ -354,7 +354,7 @@ export type BenchmarkClientIterationResult = {
 
 export type BenchmarkClientAppContext = BaseClientContext & {
   messages: MessageData[] | null;
-  setMessages: Setter<MessageData | null>;
+  setMessages: Setter<MessageData[] | null>;
   conversations: ConversationData[] | null;
   setConversations: Setter<ConversationData[] | null>;
   profileVectors: VectorProfileData[] | null;
