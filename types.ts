@@ -358,7 +358,7 @@ export type BenchmarkClientAppContext = BaseClientContext & {
   conversations: ConversationData[] | null;
   setConversations: Setter<ConversationData[] | null>;
   profileVectors: VectorProfileData[] | null;
-  setProfileData: Setter<VectorProfileData[] | null>;
+  setProfileVectors: Setter<VectorProfileData[] | null>;
   activeProfileVector: VectorProfileData | null;
   setActiveProfileVector: Setter<VectorProfileData | null>;
 
