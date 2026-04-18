@@ -261,8 +261,7 @@ export type ClientAppContext = BaseClientContext & {
 export type ClientMode = "dark" | "light";
 
 export type ClientState = {
-  type: "loading" | "ready" | "error";
-  content?: string;
+  type: "loading" | "ready" | RawError;
 };
 
 export type ClientContextProps = {
