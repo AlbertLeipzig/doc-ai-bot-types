@@ -265,7 +265,7 @@ export type ClientState = {
 };
 
 export type ClientContextProps = {
-  children: ReactNodeLike;
+  children: React.ReactNode;
 };
 
 export type ConversationDataProps = {
