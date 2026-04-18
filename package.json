@@ -1,5 +1,5 @@
 {
-  "name": "doc-ai-bot-types",
+  "name": "@doc-ai-bot/types",
   "version": "1.0.0",
   "main": "index.js",
   "types": "./types.ts",
