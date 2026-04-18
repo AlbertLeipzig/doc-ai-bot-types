@@ -16,5 +16,8 @@
   "devDependencies": {
     "@types/express": "^5.0.6",
     "@types/mongoose": "^5.11.96"
+  },
+  "dependencies": {
+    "@types/react": "^19.2.14"
   }
 }

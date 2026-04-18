@@ -1,5 +1,5 @@
 import { Schema } from "mongoose";
-
+import { ReactNode } from "react";
 /* DATA STRUCTURE */
 
 /* Vector Profile */
@@ -268,7 +268,7 @@ export type ClientState = {
 };
 
 export type ClientContextProps = {
-  children: React.ReactNode;
+  children: ReactNode;
 };
 
 export type ConversationDataProps = {
