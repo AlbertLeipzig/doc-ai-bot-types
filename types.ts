@@ -49,7 +49,10 @@ export type MessageData = {
 /* API INTERNAL LOGIC */
 
 export type CustomResponse = {
-  res: Response;
+  res: {
+    status: (code: number) => { json: (data: unknown) => any };
+    sendStatus: (code: number) => any;
+  };
   messageCode?: string;
   data?: unknown;
 };
