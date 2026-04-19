@@ -392,7 +392,6 @@ export const ESystemMessage = {
   READ_EMPTY_LIST: "read_empty_list",
   READ_SUCCESS: "read_success",
   REQUEST_MISSING_DATA: "request_missing data",
-  RETRIEVE_MISSING_QUERY: "retrieve_missing_query",
   TOKEN_ERROR: "token_error",
   TOO_MANY_REQUESTS: "too_many_requests",
   UPDATE_SUCCESS: "update_success",
@@ -408,7 +407,7 @@ export type RawError = {
 };
 
 export type ApiResponse = {
-  codeNumber: 200 | 201 | 400 | 401 | 404 | 422 | 500;
+  codeNumber: 200 | 201 | 400 | 401 | 404 | 422 | 429 | 500;
   systemMessage?: string;
   userMessage?: string;
 };
