@@ -380,6 +380,25 @@ export type BenchmarkClientAppContext = BaseClientContext & {
 - NormalizedClientRequest : what the Client will send to the API
 */
 
+export enum SystemMessage {
+  HEALTHY = "healthy",
+  LOGGED_IN = "logged_in",
+  REQUEST_MISSING_DATA = "request_missing data",
+  LOGGED_OUT = "logged_out",
+  LOGIN_WRONG_CREDENTIALS = "login_wrong_credentials",
+  VERIFIED = "verified",
+  TOKEN_ERROR = "token_error",
+  RETRIEVE_MISSING_QUERY = "retrieve_missing_query",
+  DELETE_SUCCESS = "delete_success",
+  CREATE_SUCCESS = "create_success",
+  READ_SUCCESS = "read_success",
+  UPDATE_SUCCESS = "update_success",
+  READ_EMPTY_LIST = "read_empty_list",
+  NOT_FOUND = "not_found",
+  TOO_MANY_REQUESTS = "too_many_requests",
+  GENERAL_EXCEPTION = "general_exception",
+}
+
 export type RawError = {
   code: number;
   message?: string;
