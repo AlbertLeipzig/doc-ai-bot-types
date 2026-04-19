@@ -380,24 +380,27 @@ export type BenchmarkClientAppContext = BaseClientContext & {
 - NormalizedClientRequest : what the Client will send to the API
 */
 
-export enum SystemMessage {
-  CREATE_SUCCESS = "create_success",
-  DELETE_SUCCESS = "delete_success",
-  GENERAL_EXCEPTION = "general_exception",
-  HEALTHY = "healthy",
-  LOGGED_IN = "logged_in",
-  LOGGED_OUT = "logged_out",
-  LOGIN_WRONG_CREDENTIALS = "login_wrong_credentials",
-  NOT_FOUND = "not_found",
-  READ_EMPTY_LIST = "read_empty_list",
-  READ_SUCCESS = "read_success",
-  REQUEST_MISSING_DATA = "request_missing data",
-  RETRIEVE_MISSING_QUERY = "retrieve_missing_query",
-  TOKEN_ERROR = "token_error",
-  TOO_MANY_REQUESTS = "too_many_requests",
-  UPDATE_SUCCESS = "update_success",
-  VERIFIED = "verified",
-}
+export const ESystemMessage = {
+  CREATE_SUCCESS: "create_success",
+  DELETE_SUCCESS: "delete_success",
+  GENERAL_EXCEPTION: "general_exception",
+  HEALTHY: "healthy",
+  LOGGED_IN: "logged_in",
+  LOGGED_OUT: "logged_out",
+  LOGIN_WRONG_CREDENTIALS: "login_wrong_credentials",
+  NOT_FOUND: "not_found",
+  READ_EMPTY_LIST: "read_empty_list",
+  READ_SUCCESS: "read_success",
+  REQUEST_MISSING_DATA: "request_missing data",
+  RETRIEVE_MISSING_QUERY: "retrieve_missing_query",
+  TOKEN_ERROR: "token_error",
+  TOO_MANY_REQUESTS: "too_many_requests",
+  UPDATE_SUCCESS: "update_success",
+  VERIFIED: "verified",
+} as const;
+
+export type SystemMessage =
+  (typeof ESystemMessage)[keyof typeof ESystemMessage];
 
 export type RawError = {
   code: number;
