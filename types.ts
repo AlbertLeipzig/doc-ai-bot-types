@@ -381,22 +381,22 @@ export type BenchmarkClientAppContext = BaseClientContext & {
 */
 
 export enum SystemMessage {
+  CREATE_SUCCESS = "create_success",
+  DELETE_SUCCESS = "delete_success",
+  GENERAL_EXCEPTION = "general_exception",
   HEALTHY = "healthy",
   LOGGED_IN = "logged_in",
-  REQUEST_MISSING_DATA = "request_missing data",
   LOGGED_OUT = "logged_out",
   LOGIN_WRONG_CREDENTIALS = "login_wrong_credentials",
-  VERIFIED = "verified",
-  TOKEN_ERROR = "token_error",
-  RETRIEVE_MISSING_QUERY = "retrieve_missing_query",
-  DELETE_SUCCESS = "delete_success",
-  CREATE_SUCCESS = "create_success",
-  READ_SUCCESS = "read_success",
-  UPDATE_SUCCESS = "update_success",
-  READ_EMPTY_LIST = "read_empty_list",
   NOT_FOUND = "not_found",
+  READ_EMPTY_LIST = "read_empty_list",
+  READ_SUCCESS = "read_success",
+  REQUEST_MISSING_DATA = "request_missing data",
+  RETRIEVE_MISSING_QUERY = "retrieve_missing_query",
+  TOKEN_ERROR = "token_error",
   TOO_MANY_REQUESTS = "too_many_requests",
-  GENERAL_EXCEPTION = "general_exception",
+  UPDATE_SUCCESS = "update_success",
+  VERIFIED = "verified",
 }
 
 export type RawError = {
