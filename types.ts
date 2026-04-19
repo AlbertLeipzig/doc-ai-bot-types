@@ -401,10 +401,7 @@ export const ESystemMessage = {
 export type SystemMessage =
   (typeof ESystemMessage)[keyof typeof ESystemMessage];
 
-export type RawError = {
-  code: number;
-  message?: string;
-};
+export type RawError = SystemMessage | { code: SystemMessage; detail: string };
 
 export type ApiResponse = {
   codeNumber: 200 | 201 | 400 | 401 | 404 | 422 | 429 | 500;
