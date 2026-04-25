@@ -293,6 +293,12 @@ export type RefObjectLike<T> = {
 
 export type Setter<T> = (value: T | ((prev: T) => T)) => void;
 
+export type ClientMessageData = {
+  _id: string;
+  content: string;
+  role: "user" | "assistant" | "system";
+};
+
 /* BENCHMARK */
 
 export type BenchmarkIteration = {
