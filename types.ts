@@ -117,7 +117,7 @@ export type RequestData = Endpoint & {
 export type ServerConfig = {
   cookieOptions: {
     httpOnly: boolean;
-    sameSite: string | "strict" | "lax" | "none";
+    sameSite: "strict" | "lax" | "none";
     secure: boolean;
     maxAge: number;
   };
